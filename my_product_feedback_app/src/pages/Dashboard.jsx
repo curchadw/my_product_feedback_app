@@ -1,4 +1,8 @@
 import React from 'react'
+import FeedbackCards from '../components/FeedbackCards'
+
+
+
 const Dashboard = () =>{
     return(
         <div className='dashboard'>
@@ -6,7 +10,7 @@ const Dashboard = () =>{
 
             </div>
             <div className="main_dash">
-
+                <FeedbackCards />
             </div>
         </div>
     )

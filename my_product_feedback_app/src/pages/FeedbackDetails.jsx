@@ -5,7 +5,7 @@ export default function FeebackDetails(props){
     const feedbackData = useContext(feedbackContext)
     const feedbackId = props.match.params.id
 
-    const feedbackObj = feedbackData.find(obj => obj.id == feedbackId)
+    const feedbackObj = feedbackData.find(obj => obj.id === feedbackId)
 
     console.log(feedbackObj)
 

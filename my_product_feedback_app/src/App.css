@@ -11,10 +11,10 @@ body{
 }
 
 .sidebar{
-  height: 400px;
-  width: 200px;
+  height: 500px;
+  width: 250px;
   margin: 0 25px;
-  background-color: grey;
+
 }
 
 .dashboard{
@@ -53,7 +53,7 @@ body{
   border-radius: 10px;
   width: fit-content;
   font-weight: bold;
-  /* text-align: center; */
+  text-align: center;
 }
 
 
@@ -74,3 +74,30 @@ body{
 #upvotes img{
   width: 15px;
 }
+
+/* sidebar */
+
+.banner{
+  background-image: url('./images/background-header.png');
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 130px;
+  width: 250px;
+  margin-bottom: 20px;
+  
+}
+
+.tags{
+  background-color: #F1F4FE;
+  height: 130px;
+  width: 250px;
+  border-radius: 10px;
+  
+}
+
+.tags_render{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+

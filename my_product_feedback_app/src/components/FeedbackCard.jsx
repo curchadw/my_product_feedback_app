@@ -10,7 +10,7 @@ const FeedbackCard = ({title, status, upvotes, description, category, numComment
         }>
 
             <div id="upvotes">
-                <img src="/assets/icon-arrow-up.svg" alt="upvote_arrow" />
+                <img src="../images/icon-arrow-up.svg" alt="upvote_arrow" />
                 {upvotes}
             </div>
             <div className="feedback_main">
@@ -19,7 +19,7 @@ const FeedbackCard = ({title, status, upvotes, description, category, numComment
                 <div className="tag">{category}</div>
             </div>
             <div className="num_comments">
-            <img src="/assets/icon-comments.svg" alt="comments" />
+            <img src="../images/icon-comments.svg" alt="comments" />
                 {numComments}
             </div>    
 

@@ -11,14 +11,14 @@ export default function FeebackDetails(props){
 
     return(
         <div>
-            {
+            {/* {
                 feedbackObj.comments.map(comment=>(
                     <div className="commentCard" style={{margin: 30}}>
                         {comment.content}
 
                     </div>
                 ))
-            }
+            } */}
         </div>
     )
 }

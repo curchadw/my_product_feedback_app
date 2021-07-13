@@ -1,18 +1,34 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState} from 'react'
 import Tag from '../components/Tag'
 import feedbackContext from '../utils/FeedbackContext'
 
 const Tags = () =>{
 
     const data = useContext(feedbackContext)
-    
+    const [dataArray, setDataArray] = useState([])
+   
+
+    useEffect(() =>{
+        if (data){
+           let tempArray = data.reduce((acc,cur) => [...acc,cur.category],[]) 
+           setDataArray(Array.from(new Set(tempArray)))
+           }
+        
+        },[data])
+        
+   useEffect(()=>{
+    console.log(dataArray)
+   },[dataArray])
 
     return(
         <div className='tags_render'>
         {
-            [...new Set(data.map(({category})=> <Tag category={category}/>))]
+            dataArray.map( name => <Tag category={name.category}/>)
+            
 
         }
+
+        
         </div>
     )
 }

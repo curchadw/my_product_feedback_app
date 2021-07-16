@@ -23,12 +23,8 @@ const Tags = () =>{
     return(
         <div className='tags_render'>
         {
-            dataArray.map( name => <Tag category={name.category}/>)
-            
-
+            dataArray.map(name => <Tag key={name.id} category={name.category}/>)
         }
-
-        
         </div>
     )
 }

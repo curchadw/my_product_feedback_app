@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Add_Feedback = () =>{
+const AddFeedback = () =>{
 
     return(
         <div className='feedback_btn'>
@@ -10,4 +10,4 @@ const Add_Feedback = () =>{
 
 }
 
-export default Add_Feedback
+export default AddFeedback

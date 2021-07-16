@@ -17,7 +17,6 @@ body{
 .header{
   display: flex;
   height: 90px;
-  justify-content: space-between;
   background-color: #6D75C5;
   width: 65%;
   margin: 10px auto;
